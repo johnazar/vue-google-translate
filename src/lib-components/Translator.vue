@@ -218,7 +218,7 @@ export default {
       if (typeof window !== 'undefined') {
         window.doGTranslate(code);
         if (this.hasClickListener) {
-          this.$emit('on-country-click');
+          this.$emit('on-country-click', code);
         }
       }
     },
